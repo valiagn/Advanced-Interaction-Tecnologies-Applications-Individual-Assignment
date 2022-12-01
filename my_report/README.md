@@ -26,8 +26,14 @@
 ![Στιγμιότυπο οθόνης (9)](https://user-images.githubusercontent.com/93785609/199462948-be2ee821-ddd6-4131-a48f-e9048e7ff8b6.png)
 ![Στιγμιότυπο οθόνης (10)](https://user-images.githubusercontent.com/93785609/199462973-36b48802-7cd6-4f79-a82c-3f472107b27f.png)
 # 2nd Deliverable
-
-
+1.Background Removal: Για το πρώτο ερώτημα υλοποιήθηκε το example 16-12, αλλάζοντας το threshold σε 150 (μετά από δοκιμές για να δω πόσο πρέπει να διαφέρει το foreground από το background). Εισήγαγα μια φωτογραφία (castle.jpg) στο φάκελο του σχεδίου μεγέθους 640x480 και υλοποίησα την άσκηση, βάζοντας να εμφανίζει το background αντικαθηστώντας το με την εικόνα μου όταν diff>threshold.
+![1](https://user-images.githubusercontent.com/93785609/205003958-30bac7b6-c65b-49ef-a593-6f10d5c07f5b.png)
+2.Motion Detection: Στη συνέχεια στο 2ο ερώτημα υλοποίησα το παράδειγμα 16-7 αλλάζοντας το threshold σε 150 κι αλλάζοντας το σχήμα της έλλειψης σε (12, 50), το χρώμα του fill σε μπλε και το χρώμα του stroke σε ροζ.
+![2](https://user-images.githubusercontent.com/93785609/205004933-1fcfa746-4b94-44cf-83a2-1ee515051a64.png)
+3.Background Substraction - Library use: Για το 3ο υποερώτημα κατέβασα και εισήγαγα την βιβλιοθήκη OpenCV for Processing κι έπειτα έτρεξα το παράδειγμα του Background Substraction. Άλλαξα το μέγεθος της κάμερας σε 720x480 έβαλα στο παράδειγμα να αναγνωρίζει και να δέχεται εισαγωγή εικόνας μέσω της κάμερας και άλλαξα το χρώμα του stroke σε burgundy.
+![3](https://user-images.githubusercontent.com/93785609/205006029-52b1f66b-08ff-4c0d-ae66-8df6b8ababd0.png)
+4.Object Tracking: Τέλος για το ερώτημα αυτό, έτρεξα αρχικά τα δύο παραδείγματα 16-11 κι 9-8 και έβαλα με κλικ του ποντικιού το "φιδάκι" να παίρνει ροζ χρώμα και να ακολουθεί το αντικείμενο το οποίο πατήθηκε (στην συγκεκριμένη περίπτωση κόκκινο κερί).
+![4](https://user-images.githubusercontent.com/93785609/205007134-aa714a40-581b-43fb-86f5-9b39ce62ba6f.png)
 # 3rd Deliverable 
 
 
