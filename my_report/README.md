@@ -35,8 +35,30 @@
 4.Object Tracking: Τέλος για το ερώτημα αυτό, έτρεξα αρχικά τα δύο παραδείγματα 16-11 κι 9-8 και έβαλα με κλικ του ποντικιού το "φιδάκι" να παίρνει ροζ χρώμα και να ακολουθεί το αντικείμενο το οποίο πατήθηκε (στην συγκεκριμένη περίπτωση κόκκινο κερί).
 ![4](https://user-images.githubusercontent.com/93785609/205007134-aa714a40-581b-43fb-86f5-9b39ce62ba6f.png)
 # 3rd Deliverable 
+Για το τρίτο παραδοτέο χρειάστηκε να κάνω εγκατάσταση της εφαρμογής reacTIVision. Αφού την εγκατέστησα πρόσθεσα το αρχείο στην Processing για να αναγνωρίζει την βιβλιοθήκη. Έπειτα κατέβασα το TUIO Simulator καθώς και το Java Runtime Environment για να μπορεί να τρέξει η εφαρμογή.
 
+Ανοίγοντας το παράδειγμα TUIO Demo από την Processing εμφάνιζε ένα λευκό φόντο μόνο, αλλά από το Simulator όταν έκανες drag and drop κάποιο στοιχείο μέσα στον χώρο της εφαρμογής εμφανιζόταν αντίστοιχα στην αντίστοιχη θέση και στο παράθυρο της Processing
+![Στιγμιότυπο οθόνης (31)](https://user-images.githubusercontent.com/93785609/211746264-3e144677-0b63-4297-b027-4d7b81e84cf0.png)
+![Στιγμιότυπο οθόνης (32)](https://user-images.githubusercontent.com/93785609/211746369-68b08d66-744d-4c57-aa3a-8b1a859c971e.png)
+Στη συνέχεια με τη βοήθεια κάποιων βίντεο από το YouTube (https://www.youtube.com/watch?v=tJ0aZzST-N4&list=LL&index=1&t=2s&ab_channel=Roc%C3%ADoM%C3%A1rquez και https://www.youtube.com/watch?v=qKXlI4zAMAY&ab_channel=SergioL%C3%B3pezRey) κατάφερα να δω τη λογική του reacTIVision και να καταλάβω πως αναγνωρίζει τα fiducials.
 
+Με τη βοήθεια του TUIO Demo και του παραδείγματος 15-1, από το Learning Processing, 2nd Edition, και έχοντας προσθέσει στον φάκελο του αρχείου μου 2 εικόνες της επιλογής μου(eiffel.jpg, macaron.jpg) έκανα με την χρήση του fiducial 0 να εμφανίζεται η εικόνα "eiffel" και με τη χρήση του fiducial 2 να εμφανίζεται η εικόνα "macaron".
+
+~ if(tobj.getSymbolID() == 0)
+![Στιγμιότυπο οθόνης (56)](https://user-images.githubusercontent.com/93785609/211749318-13e0dfdf-82d4-4232-a421-2d44c7ab33c2.png)
+~ if(tobj.getSymbolID() == 2)
+![Στιγμιότυπο οθόνης (57)](https://user-images.githubusercontent.com/93785609/211749380-9fbff6cd-bdb1-440e-92dd-1b69af5d6936.png)
+Για το fiducial 1 έβαλα να εφαρμόζει ένα γκρί- ασπρόμαυρο φίλτρο με τη βοήθεια αυτού (https://processing.org/reference/filter_.html)
+~ if(tobj.getSymbolID() == 1)
+όταν fiducial 0 & 1
+![Στιγμιότυπο οθόνης (59)](https://user-images.githubusercontent.com/93785609/211751410-67b296d8-4bf9-4a59-aa68-7d204eae29c1.png)
+όταν fiducial 2 & 1
+![Στιγμιότυπο οθόνης (60)](https://user-images.githubusercontent.com/93785609/211751446-b473b7f2-92e4-470c-8567-848547fe5545.png)
+όταν fiducial 0 & 2
+![Στιγμιότυπο οθόνης (58)](https://user-images.githubusercontent.com/93785609/211751521-b8b9b79a-4a18-4725-ae76-35cb2d9ed8c8.png)
+
+"Σε ποια φάση της σχεδίασης και ανάπτυξης του υλικό/λογισμικού της διάδρασης θα διαλέγατε την κανονική κάμερα ή τον προσομοιωτή?"
+Ο προσομοιωτής θα αναγνώριζε αμεσότερα και θα αποκωδικοποιούσε τα fiducials, ενώ η κάμερα, όπως είδα και γω τρέχοντας την εφαρμογή, πολλές φορές δυσκολευόταν να αναγνωρίσει κατευθείαν το fiducial. Στη συνέχεια θα μπορούσε για καλύτερη κατανόηση του τί φίλτρο θα επιλέξει και τί θα αλλάξει στην εικόνα αυτό και πώς θα φαίνεται, να χρησιμοποιηθεί η καμερα.
 # Bonus 
 
 
